@@ -119,7 +119,7 @@
     padding: 5px 20px; 
     color: white;
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform:capitalize;
     background-color: #5A8EBD;
     border-radius: 20px;
   }

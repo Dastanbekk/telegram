@@ -1,4 +1,6 @@
 const api = "https://676afc4abc36a202bb83d19d.mockapi.io/api/v20/messages"
+const sendBtn = document.getElementById("send")
+const messageWrap = document.querySelector(".message")
 
 function fetchFunc(){
   fetch(api)
@@ -6,7 +8,6 @@ function fetchFunc(){
 .then((data)=>funcFetch(data))
 .catch((err)=>console.log(err))
 }
-const messageWrap = document.querySelector(".message")
 
 function funcFetch(data){
   data.forEach((message) => {
@@ -23,9 +24,9 @@ function funcFetch(data){
 }
 
 
-const sendBtn = document.getElementById("send")
 
-sendBtn.addEventListener("click",()=>{
+sendBtn.addEventListener("submit",(e)=>{
+  e.preventDefault();
   const messageInput = document.getElementById("messageInput").value.trim()
   if(messageInput){
       fetch(api,{
