@@ -626,6 +626,18 @@ video {
   grid-template-columns: 23% minmax(77%,1fr);
 }
 
+.grid-cols-\[20\%_minmax\(77\%\2c 1fr\)\] {
+  grid-template-columns: 20% minmax(77%,1fr);
+}
+
+.grid-cols-\[25\%_minmax\(77\%\2c 1fr\)\] {
+  grid-template-columns: 25% minmax(77%,1fr);
+}
+
+.grid-cols-\[25\%_minmax\(75\%\2c 1fr\)\] {
+  grid-template-columns: 25% minmax(75%,1fr);
+}
+
 .flex-col {
   flex-direction: column;
 }
