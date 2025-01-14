@@ -78,12 +78,16 @@
                         <p>Online</p>
                     </div>
                 </li>
+                
                 <div>
                     <img src="../assets/svg/three-dot.svg" alt="">
                 </div>
             </div>
-
-            <div class="flex items-end w-[100%]  ">
+            <div class="bg-[black] h-[100%]">
+                <div class="message h-full flex gap-[10px] mr-2 pb-4 justify-end items-end flex-col">
+                </div>
+            </div>
+            <div class="flex items-end w-[100%]">
                 <div class="bg-white py-[8px] w-full px-[20px]">
                     <form action="" class="flex  items-center gap-[15px]">
                         <button class="flex items-center gap-1 py-[4px] text-[20px] px-[10px] rounded-full bg-[dodgerblue] text-white">
@@ -96,8 +100,11 @@
                         <input type="text"
                         required
                         class="w-[80%] outline-none"
-
+                        id="messageInput"
                         >
+                        <button id="send" class=" py-[8px] px-[16px] rounded-full bg-[dodgerblue] flex justify-center items-center">
+                            <i class='bx bxl-telegram' style='color:#ffffff'  ></i>
+                        </button>
                         <a href="#">
                             <i class='bx bx-paperclip text-[40px] text-gray-400'></i>
                         </a>
@@ -111,7 +118,7 @@
         </div>
     </div>
 
+    <script src="../main.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="./main.js"></script>
 </body>
 </html>

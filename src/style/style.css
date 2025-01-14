@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -112,4 +113,13 @@
     background-image: url('../../assets/images/wallpaper.png');
     max-width: 100vw;
     max-height: 100vh;
+  }
+  
+  .messageCount{
+    padding: 5px 20px; 
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #5A8EBD;
+    border-radius: 20px;
   }
