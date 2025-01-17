@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css"> -->
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body>
+<body id="tg">
     
     <div class="grid grid-cols-[25%_minmax(75%,1fr)]">
-        <div class="bg-[#517DA2] border-r border-black h-[100vh]">
+        <div class="bg-[#517DA2] border-r border-black z-50 h-[100vh]">
+            
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
@@ -20,9 +21,9 @@
             
                 <ul class="menu__box flex bg-[dodgerblue] relative">
                         <li class="flex items-center gap-6 px-[20px] py-[10px] pb-[20px] ">
-                            <img src="../assets/images/profile.jpg" class="w-[100%] max-w-[70px] rounded-full" alt="logo">
+                            <img id="hamburger_img" src="" class="w-[100%] max-w-[70px] rounded-full" alt="logo">
                             <div class="flex flex-col  gap-1 text-white">
-                                <h3 class="font-bold text-[18px]">Dastanbek</h3>
+                                <h3 class="font-bold text-[18px] " id="hamburger_user"></h3>
                                 <p>Online</p>
                             </div>
     
@@ -33,16 +34,15 @@
                         <ul class="menu__box-2 bg-white h-[100%] flex flex-col gap-5 px-[20px] py-[10px]">
                             <li class="flex flex-col">
                                 <span class="text-[#4094D0]">Account</span>
-                                <a class="text-[18px]" href="tel:+380 (53) 637 67 90">+99 (897) 356-01-09</a>
+                                <a class="text-[18px]" href="tel:+380 (53) 637 67 90" id="hamburger_number"></a>
                                 <span class="text-[#83868B]">Tap to change phone number</span>
                             </li>
                             <li class="flex flex-col">
-                                <a class="text-[18px]" href="#">@Dastandev_0110</a>
+                                <a class="text-[18px]" href="#" id="hamburger_email"></a>
                                 <span class="text-[#83868B]">Username</span>
                             </li>
                             <li class="flex flex-col">
                                 <a class="text-[18px]" href="#">Аллохумма солли ьала саййидина Муҳаммад</a>
-                                <span class="text-[#83868B]">Username</span>
                             </li>
     
                             <li class="flex flex-col mt-[20px]">
@@ -67,54 +67,12 @@
                 </ul>
     
             </div>
-        </div>
-        <div class="user flex flex-col justify-between">
-            <div class="bg-[#517DA2] flex justify-between items-center px-[20px] z-20">
-                <li class="flex items-center gap-6 px-[20px]  py-[5px]">
-                    <img src="../assets/svg/arrow-left.svg" alt="">
-                    <img src="../assets/images/profile.jpg" class="w-[100%] max-w-[50px] rounded-full" alt="logo">
-                    <div class="flex flex-col  gap-1 text-white">
-                        <h3 class="font-bold text-[18px]">Dastanbek</h3>
-                        <p>Online</p>
-                    </div>
-                </li>
-                
-                <div>
-                    <img src="../assets/svg/three-dot.svg" alt="">
-                </div>
-            </div>
-            <div class="h-[80%] ">
-                <div class="message  h-full flex gap-[10px] mr-2 pb-4 justify-end items-end flex-col z-10">
-                </div>
-            </div>
-            <div class="flex items-end w-[100%]">
-                <div class="bg-white py-[8px] gap-[20px] flex w-full px-[20px]">
-                        <button class="flex items-center gap-1 py-[4px] text-[20px] px-[10px] rounded-full bg-[dodgerblue] text-white">
-                            <i class='bx bx-menu'></i>
-                            Menu
-                        </button>
-                        <a href="#">
-                            <i class='bx bx-smile text-[40px] text-gray-400' ></i>
-                        </a>
-                    <form id="send" class="flex w-[100%] gap-[20px]">
-                        <input type="text"
-                        required
-                        class="w-[80%] border rounded-full px-[20px] text-[18px] border-black outline-none"
-                        id="messageInput"
-                        >
-                        <button type="submit" class="text-white text-[18px] py-[8px] px-[16px] rounded-full bg-[dodgerblue] flex justify-center items-center">
-                            Send
-                        </button>
-                        <a href="#">
-                            <i class='bx bx-paperclip text-[40px] text-gray-400'></i>
-                        </a>
-                        <a href="#">
-                            <i class='bx bx-microphone text-[40px] text-gray-400'></i>
-                        </a>
-                    </form>
+            <div class="mt-[40px] users_wrap gap-[10px]">
 
-                </div>
             </div>
+        </div>
+        <div class="user_panel" >
+
         </div>
     </div>
 
