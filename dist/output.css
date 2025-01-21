@@ -586,7 +586,8 @@ video {
   margin: auto;
 }
 
-.mr-2 {
+.mx-2 {
+  margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
@@ -596,10 +597,6 @@ video {
 
 .mt-\[40px\] {
   margin-top: 40px;
-}
-
-.block {
-  display: block;
 }
 
 .flex {
@@ -622,16 +619,16 @@ video {
   height: 100vh;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[80\%\] {
   height: 80%;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[60px\] {
-  height: 60px;
 }
 
 .w-\[100\%\] {
@@ -642,20 +639,12 @@ video {
   width: 30%;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .w-\[80\%\] {
   width: 80%;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[60px\] {
-  width: 60px;
-}
-
-.max-w-\[50px\] {
-  max-width: 50px;
 }
 
 .max-w-\[70px\] {
@@ -755,29 +744,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[crimson\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 20 60 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#1464dc\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 100 220 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#4273bc\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(66 115 188 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#4273bcc4\] {
-  background-color: #4273bcc4;
-}
-
-.bg-\[\#77a2e1c4\] {
-  background-color: #77a2e1c4;
-}
-
 .p-\[10px\] {
   padding: 10px;
 }
@@ -802,11 +768,6 @@ video {
   padding-bottom: 10px;
 }
 
-.py-\[4px\] {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -821,6 +782,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
 .pb-\[20px\] {
   padding-bottom: 20px;
 }
@@ -829,16 +794,8 @@ video {
   font-size: 18px;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-\[25px\] {
   font-size: 25px;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
 }
 
 .font-bold {
@@ -853,11 +810,6 @@ video {
 .text-\[\#83868B\] {
   --tw-text-opacity: 1;
   color: rgb(131 134 139 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -967,6 +919,7 @@ video {
   background-image: url('../../assets/images/wallpaper.png');
   max-width: 100vw;
   max-height: 100vh;
+  background-size: contain;
 }
 
 .messageCount{
@@ -977,4 +930,25 @@ video {
   background-color: #5A8EBD;
   border-radius: 20px;
 }
-  
+
+.incoming {
+  align-self: flex-start;
+  background-color: #e1ffc7;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 15px 15px 15px 5px;
+  max-width: 60%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.outgoing {
+  align-self: flex-end;
+  background-color: #0084ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px 15px 5px 15px;
+  max-width: 60%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

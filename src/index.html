@@ -68,12 +68,48 @@
     
             </div>
             <div class="mt-[40px] users_wrap gap-[10px]">
+                
+            </div>
+        </div>
+        <div class="flex flex-col h-full ">
+            <div class="user_panel">
+            
+
+
+
+            
+            </div>
+            <div>
+                <div class="user hidden h-[100vh] pb-[10px]   flex-col justify-between">
+                    <div class="bg-[#517DA2] flex justify-between items-center px-[20px] z-20">
+                      <li class="flex items-center gap-6 px-[20px] py-[5px]">
+                        <img src="../assets/svg/arrow-left.svg" alt="">
+                        <img id="logo" src="" class="w-[50px]  h-[50px] rounded-full" alt="logo">
+                        <div class="flex flex-col gap-1 text-white">
+                          <h3 id="username" class="font-bold text-[18px]"></h3>
+                          <p class="online">Online</p>
+                          <p class="typing hidden">Typing...</p>
+                        </div>
+                      </li>
+                      <div>
+                        <img src="../assets/svg/three-dot.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="h-[80%]">
+                      <div class="message h-[100%] flex items-end gap-[10px] overflow-y-scroll mx-2 pb-4 flex-col z-10"></div>
+                    </div>
+                    <div class="flex items-end w-[100%]">
+
+                    </div>
+                    <form id="send-btn" class="flex justify-center  w-[100%] gap-[20px]">
+                        <input type="text" class="w-[80%]  rounded-full border   px-[20px] text-[18px] border-black outline-none" id="messageInput">
+                        <button  class="text-white text-[18px] py-[8px] px-[16px] rounded-full bg-[dodgerblue] flex justify-center items-center">Send</button>
+                      </form>
+                  </div>  
 
             </div>
         </div>
-        <div class="user_panel" >
 
-        </div>
     </div>
 
     <script src="../main.js"></script>
