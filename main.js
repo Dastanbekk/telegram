@@ -1,6 +1,6 @@
-// if(localStorage.length===0){
-//   window.location.href = "login.html"
-// }
+if(localStorage.length===0){
+  window.location.href = "index.html"
+}
 
 const api1 = "https://6787ed4fc4a42c916108c702.mockapi.io/message";
 const apiuser = "https://6787ed4fc4a42c916108c702.mockapi.io/users";
