@@ -6,7 +6,6 @@ fetch(api)
   .then((res) => res.json())
   .then((data) => fetchFunc(data))
   .catch((err) => console.error("Error fetching data:", err));
-
 function fetchFunc(users) {
   logIn_btn?.addEventListener("click", () => {
     const userName = document.getElementById("userName").value.trim();
@@ -19,9 +18,9 @@ function fetchFunc(users) {
     if (matchedUser) {
       localStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
 
-      window.location.href = "/src/index.html";
-    } else {
       window.location.href = "/src/login.html";
+    } else {
+      window.location.href = "/src/index.html";
     }
   });
 }
