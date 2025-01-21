@@ -1,6 +1,6 @@
-if(localStorage.length===0){
-  window.location.href = "login.html"
-}
+// if(localStorage.length===0){
+//   window.location.href = "login.html"
+// }
 
 const api1 = "https://6787ed4fc4a42c916108c702.mockapi.io/message";
 const apiuser = "https://6787ed4fc4a42c916108c702.mockapi.io/users";
@@ -25,7 +25,7 @@ const user = document.querySelector(".user")
 let localUser = localStorage.getItem("loggedInUser")
 let localUserItems = JSON.parse(localUser)
 
-hamUser.textContent = localUserItems.username;
+hamUser.textContent = localUserItems.username;                  
 hamUserNumber.textContent = localUserItems.phone_number;
 hamUserEmail.textContent = localUserItems.email;
 hamUserImg.src = localUserItems.img 
